@@ -48,21 +48,67 @@ namespace Kapitel_5
             }
 
             Console.WriteLine($"Det största talet är: {max}");
+            
+
+
+
+            5.6
+            string[] länder = new string[5];
+            Console.WriteLine("Skriv in 5 länder");
+
+            for (int i = 0; i < länder.Length; i++)
+            {
+                Console.WriteLine($"Skriv in land {i + 1}");
+                länder[i] = Console.ReadLine();
+            }
+
+            Console.WriteLine();
+
+            foreach (string land in länder)
+            {
+                Console.WriteLine(land);
+            }
+           
+
+            //5.7
+            Console.WriteLine("hej");
+
+            int[] tals = new int[5];
+
+            tals[0] = 2;
+            tals[1] = 7;
+            tals[2] = 10;
+            tals[3] = 1;
+            tals[4] = 13;
+
+            int summa = 0;
+
+            foreach (int tal in tals)
+            {
+                summa += tal;
+            }
+            Console.WriteLine($"Summan av talen är: {summa}");
+             
+            //5.8
+            Console.WriteLine("Skriv en mening");
+            string mening = Console.ReadLine();
+
+            string[] separeradMening = mening.Split(' ');
+
+            foreach (string ord in separeradMening)
+            {
+                Console.WriteLine(ord);
+            }
             */
 
-            Console.WriteLine("Hej");
-            Console.WriteLine("Skriv din ålder");
-            Console.ReadLine();
-            
-            
+            //5.9
 
-            string svar = "";
-            int antal = 0;
+            Console.WriteLine("Skriv olika tal och separera dessa med + emmellan varje");
+            string användarensTal = Console.ReadLine();
 
-            while (svar != "n")
-            {
+            string[] separeradeTal = användarensTal.Split('+');
 
-            }
+            int summa = 0;
 
 
 
